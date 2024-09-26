@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import style from "../styles/notify.css";
+import "../styles/notify.css";
 export const Notify = () => {
   const { Name } = useParams();
   let nombre = { Name }.Name.toString();

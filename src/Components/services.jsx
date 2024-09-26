@@ -9,7 +9,7 @@ import useResponsive from "./useResponsive";
 import "../styles/services.css"
 
 export const Services = () =>{
-    const { isDesktop, isTablet, isMovile } = useResponsive();
+    const { isDesktop } = useResponsive();
     return (
         <main id="services">
         <h1 className="rubik-h1">Nuestros servicios</h1>

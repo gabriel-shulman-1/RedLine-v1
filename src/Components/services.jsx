@@ -5,8 +5,11 @@ import foto3 from "../assets/homeOficeService.jpg"
 import foto4 from "../assets/hospitalService.jpg"
 import foto5 from "../assets/fabricaService.jpg"
 import foto6 from "../assets/empresaService.jpg"
+import useResponsive from "./useResponsive";
 import "../styles/services.css"
+
 export const Services = () =>{
+    const { isDesktop, isTablet, isMovile } = useResponsive();
     return (
         <main id="services">
         <h1 className="rubik-h1">Nuestros servicios</h1>
@@ -20,9 +23,11 @@ export const Services = () =>{
                     Entendemos que cada cliente es único, por eso ofrecemos planes flexibles y escalables que se adaptan a empresas de todos los tamaños, desde pequeñas startups hasta grandes corporaciones. Nuestros servicios permiten a las empresas gestionar sus operaciones sin interrupciones, facilitando videoconferencias, transmisión de datos y la colaboración en tiempo real. Con RedLine Internet, no solo obtienes un proveedor de internet, sino un socio tecnológico que impulsa tu éxito en un mundo cada vez más digital.
                 </p>
             </div>
-            <div className="phCont">
+        {isDesktop?<div className="phCont">
                 <img className="ph" src={logo1} alt=""/>
-            </div>
+            </div>:""}
+            
+
         </div>
         <div className="ntdiv">
             <div className="tx">

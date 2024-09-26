@@ -1,5 +1,5 @@
 #services {
-  padding: 8rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,12 +75,15 @@
   transform: scale(1.05);
 }
 
-@media screen and (max-width:500px){
+
+
+@media screen and (max-width:600px){
   #services{
     height: max-content;
     padding: 3rem 0 0 0;
   }
   #services .ntdiv{
+    margin: 0;
     flex-direction: column;
     align-items: center;
   }
@@ -91,6 +94,17 @@
     display: none;
   }
   .gallery{
+    display: none;
+  }
+  #services .ntdiv{
+    box-shadow: none;
+  }
+}
+@media screen and (max-width:1050px){
+  #services .ntdiv .tx{
+    width: auto;
+  }
+  #services .ntdiv .gallery{
     display: none;
   }
 }

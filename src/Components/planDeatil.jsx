@@ -11,7 +11,7 @@ import i5 from "../assets/iconos/industriaMain.svg";
 import useResponsive from "./useResponsive";
 export const PlanDetail = () => {
   const Navigate = useNavigate();
-  const { isDesktop, isMovile } = useResponsive();
+  const { isDesktop, isTablet, isMovile } = useResponsive();
   const { Id } = useParams();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -62,9 +62,10 @@ export const PlanDetail = () => {
   const goToServices = () => {
     Navigate("/prices");
   };
+
   return (
     <main id="planDetail">
-      {isMovile ? (
+      {(isDesktop) ? (
         <button
           className="slider izq"
           onClick={() => {
@@ -95,8 +96,18 @@ export const PlanDetail = () => {
         ) : (
           ""
         )}
+        {isTablet ? (
+          <img
+            src={imagenDescription[currentImageIndex]}
+            alt={imagenDescription[currentImageIndex]}
+            style={{ width: "280px" }}
+          />
+        ) : (
+          ""
+        )}
       </div>
-        {!isMovile?<div className="buttonMovile">
+      
+        {!(isDesktop) && <div className="buttonMovile">
         <button
           className="slider izq"
           onClick={() => {
@@ -113,11 +124,9 @@ export const PlanDetail = () => {
         >
           <span>&#10095;</span>
         </button>
-      </div>:""}
+      </div>}
       
-
-
-      {isMovile ? (
+      {isDesktop ? (
         <button
           className="slider der"
           onClick={() => {

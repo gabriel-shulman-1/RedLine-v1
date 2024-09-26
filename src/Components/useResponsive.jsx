@@ -9,7 +9,7 @@ const useResponsive = () => {
     const width = window.innerWidth;
     if (width <= 600) {
       setScreenSize({ isMobile: true, isTablet: false, isDesktop: false });
-    } else if (width > 600 && width <= 1000) {
+    } else if (width > 600 && width <= 900) {
       setScreenSize({ isMobile: false, isTablet: true, isDesktop: false });
     } else {
       setScreenSize({ isMobile: false, isTablet: false, isDesktop: true });

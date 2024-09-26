@@ -90,3 +90,8 @@ main #planes .link .plan .planH3 {
   height: 200px;
   width: 200px;
 }
+@media screen and (max-width: 1000px) {
+  main .rubik-h2{
+    margin: 0;
+  }
+}

@@ -1,0 +1,43 @@
+<svg
+   width="50px"
+   height="50px"
+   viewBox="0 0 210 297"
+   version="1.1"
+   sodipodiDocname="menu.svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlnsSvg="http://www.w3.org/2000/svg">
+  <sodipodiNamedview
+     id="menuIcon"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"/>
+  <g
+     inkscapeLabel="Capa 1"
+     inkscapeGroupmode="layer"
+     id="layer1">
+    <rect
+      borderRadius="10px"
+       style="display:inline;opacity:1;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.582;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:0;paint-order:markers fill stroke"
+       id="rect1"
+       width="159.418"
+       height="15.1777"
+       x="25.87108"
+       y="100.291" />
+    <rect
+    borderRadius="10px"
+       style="display:inline;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.582;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:0;paint-order:markers fill stroke"
+       id="rect1-9"
+       width="159.418"
+       height="15.1777"
+       x="25.871"
+       y="130.291" />
+    <rect
+    borderRadius="10px"
+       style="display:inline;mix-blend-mode:normal;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.582;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:5;stroke-dasharray:none;stroke-opacity:0;paint-order:markers fill stroke"
+       id="rect1-92"
+       width="159.418"
+       height="15.1777"
+       x="25.871"
+       y="160.291" />
+  </g>
+</svg>

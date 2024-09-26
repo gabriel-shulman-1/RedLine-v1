@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0d6c0c91.css",
+    "main.js": "/static/js/main.930564bb.js",
+    "static/js/488.d871df84.chunk.js": "/static/js/488.d871df84.chunk.js",
+    "static/media/fabricaService.jpg": "/static/media/fabricaService.ce698566f78e6e6e718c.jpg",
+    "static/media/gamerService.jpg": "/static/media/gamerService.94730592270208f3b5ed.jpg",
+    "static/media/seguridadService.jpg": "/static/media/seguridadService.5feef11f8a63f5a17ebc.jpg",
+    "static/media/homeOficeService.jpg": "/static/media/homeOficeService.3f18da8e6ce5358d5595.jpg",
+    "static/media/hospitalService.jpg": "/static/media/hospitalService.b34e155231f730e4ea03.jpg",
+    "static/media/empresaService.jpg": "/static/media/empresaService.578b5c784f5acc528196.jpg",
+    "static/media/fondoheader.jpeg": "/static/media/fondoheader.2056f80321c9a804392d.jpeg",
+    "static/media/REDLINE PNG TRANSP 09.png": "/static/media/REDLINE PNG TRANSP 09.e003716202b4b15a0cc4.png",
+    "static/media/REDLINE PNG TRANSP 05.png": "/static/media/REDLINE PNG TRANSP 05.f779ae80193c18f6846c.png",
+    "static/media/REDLINE PNG BN 09.png": "/static/media/REDLINE PNG BN 09.7d5715a042c42bdb2b2f.png",
+    "static/media/Instagram.png": "/static/media/Instagram.3265f4c9337175e4f80d.png",
+    "static/media/REDLINE PNG BN 05.png": "/static/media/REDLINE PNG BN 05.371ea7753aedef67dff5.png",
+    "static/media/wps.png": "/static/media/wps.d026940870fb334920b7.png",
+    "static/media/casaMain.svg": "/static/media/casaMain.d22202b5abc4cc4186a46721a38acf36.svg",
+    "static/media/pcgamerMain.svg": "/static/media/pcgamerMain.7ccf7d55010b2bd51389dc2a87ddf197.svg",
+    "static/media/camaraMain.svg": "/static/media/camaraMain.052eda8ce9f7d566f438a4144e34a2e6.svg",
+    "static/media/homeofficeMain.svg": "/static/media/homeofficeMain.e33d041dde6ea483cad9c256d4f86393.svg",
+    "static/media/mail.svg": "/static/media/mail.798b69636b6943765340305c354415ed.svg",
+    "static/media/menu.svg": "/static/media/menu.f78c14ac0f9476b9a15fb99c2abc894b.svg",
+    "static/media/industriaMain.svg": "/static/media/industriaMain.21e69ff0ee71bee42fd65edeef47b7ff.svg",
+    "index.html": "/index.html",
+    "main.0d6c0c91.css.map": "/static/css/main.0d6c0c91.css.map",
+    "main.930564bb.js.map": "/static/js/main.930564bb.js.map",
+    "488.d871df84.chunk.js.map": "/static/js/488.d871df84.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d6c0c91.css",
+    "static/js/main.930564bb.js"
+  ]
+}

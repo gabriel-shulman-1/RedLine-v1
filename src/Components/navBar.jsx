@@ -1,16 +1,19 @@
 import logo from "../assets/REDLINE PNG TRANSP 05.png";
-import menuIcon from "../assets/iconos/menu.svg"
 import "../styles/navBarB.css";
 import instaLogo from "../assets/Instagram.png";
 import { NavLink } from "react-router-dom";
 import { WhatsAppLink } from "./wps";
 import useResponsive from "./useResponsive";
+import imgMenu from "../assets/REDLINE PNG BN 05.png"
+import menuIcon from "../assets/iconos/menu.svg"
 export const NavBar = () => {
   const { isMobile } = useResponsive();
   return (
     <>
       {isMobile ? (
         <nav className="nav-bar">
+          <img className="imgMenu n1"  src={imgMenu} alt={imgMenu} width="250px"/>
+          <img className="imgMenu n2" src={menuIcon} alt={menuIcon} width="250px"/>
           <NavLink to={"/"} className={"link"}>
             <button className="nav-btn">
               <p className="rubik-p5">Nuestros planes</p>
@@ -21,7 +24,6 @@ export const NavBar = () => {
               <p className="rubik-p5">Nuestros servicios</p>
             </button>
           </NavLink>
-          <img src={menuIcon} alt={menuIcon} />
           <NavLink to={"/prices"} className={"link"}>
             <button className="nav-btn">
               <p className="rubik-p5">Cotizaciones</p>

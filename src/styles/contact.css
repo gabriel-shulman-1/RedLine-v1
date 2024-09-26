@@ -16,7 +16,7 @@
   justify-content: space-around;
   color: white;
   border-radius: 10px;
-  box-shadow: 0px 0px 18px 6px rgba(255, 255, 255, 0.747);
+  box-shadow: 0 0 18px 6px rgba(255, 255, 255, 0.747);
 }
 
 .info-item {
@@ -85,12 +85,18 @@
   margin: 0 auto 0 auto;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #contact-container {
     padding: 2rem 0;
   }
   .contact-info iframe {
     margin: 0;
     width: -webkit-fill-available;
+  }
+  .social-links:hover img{
+    left: 5%;
+  }
+  .social-links:hover a{
+    color: white;
   }
 }

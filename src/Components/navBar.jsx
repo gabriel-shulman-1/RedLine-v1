@@ -1,4 +1,5 @@
 import logo from "../assets/REDLINE PNG TRANSP 05.png";
+import menuIcon from "../assets/iconos/menu.svg"
 import "../styles/navBarB.css";
 import instaLogo from "../assets/Instagram.png";
 import { NavLink } from "react-router-dom";
@@ -8,28 +9,33 @@ export const NavBar = () => {
   const { isMobile } = useResponsive();
   return (
     <>
-    {isMobile ? <nav className="nav-bar">
-        <NavLink to={"/"} className={"link"}>
-          <button className="nav-btn">
-            <p className="rubik-p5">Nuestros planes</p>
-          </button>
-        </NavLink>
-        <NavLink to={"/services"} className={"link"}>
-          <button className="nav-btn">
-            <p className="rubik-p5">Nuestros servicios</p>
-          </button>
-        </NavLink>
-        <NavLink to={"/prices"} className={"link"}>
-          <button className="nav-btn">
-            <p className="rubik-p5">Cotizaciones</p>
-          </button>
-        </NavLink>
-        <NavLink to={"/contact"} className={"link"}>
-          <button className="nav-btn">
-            <p className="rubik-p5">Contacto</p>
-          </button>
-        </NavLink>
-      </nav>:""}
+      {isMobile ? (
+        <nav className="nav-bar">
+          <NavLink to={"/"} className={"link"}>
+            <button className="nav-btn">
+              <p className="rubik-p5">Nuestros planes</p>
+            </button>
+          </NavLink>
+          <NavLink to={"/services"} className={"link"}>
+            <button className="nav-btn">
+              <p className="rubik-p5">Nuestros servicios</p>
+            </button>
+          </NavLink>
+          <img src={menuIcon} alt={menuIcon} />
+          <NavLink to={"/prices"} className={"link"}>
+            <button className="nav-btn">
+              <p className="rubik-p5">Cotizaciones</p>
+            </button>
+          </NavLink>
+          <NavLink to={"/contact"} className={"link"}>
+            <button className="nav-btn">
+              <p className="rubik-p5">Contacto</p>
+            </button>
+          </NavLink>
+        </nav>
+      ) : (
+        ""
+      )}
       <header>
         <div className="top-bar">
           <div className="logo">

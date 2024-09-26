@@ -11,7 +11,7 @@ import i5 from "../assets/iconos/industriaMain.svg";
 import useResponsive from "./useResponsive";
 export const PlanDetail = () => {
   const Navigate = useNavigate();
-  const { isDesktop } = useResponsive();
+  const { isDesktop, isMovile } = useResponsive();
   const { Id } = useParams();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -64,14 +64,19 @@ export const PlanDetail = () => {
   };
   return (
     <main id="planDetail">
-      <button
-        className="slider izq"
-        onClick={() => {
-          handlePrev();
-        }}
-      >
-        <span>&#10094;</span>
-      </button>
+      {isMovile ? (
+        <button
+          className="slider izq"
+          onClick={() => {
+            handlePrev();
+          }}
+        >
+          <span>&#10094;</span>
+        </button>
+      ) : (
+        ""
+      )}
+
       <div
         className={"descriptionContainer cont" + Id.toString()}
         onClick={() => {
@@ -91,14 +96,39 @@ export const PlanDetail = () => {
           ""
         )}
       </div>
-      <button
-        className="slider der"
-        onClick={() => {
-          handleNext();
-        }}
-      >
-        <span>&#10095;</span>
-      </button>
+        {!isMovile?<div className="buttonMovile">
+        <button
+          className="slider izq"
+          onClick={() => {
+            handlePrev();
+          }}
+        >
+          <span>&#10094;</span>
+        </button>
+        <button
+          className="slider der"
+          onClick={() => {
+            handleNext();
+          }}
+        >
+          <span>&#10095;</span>
+        </button>
+      </div>:""}
+      
+
+
+      {isMovile ? (
+        <button
+          className="slider der"
+          onClick={() => {
+            handleNext();
+          }}
+        >
+          <span>&#10095;</span>
+        </button>
+      ) : (
+        ""
+      )}
     </main>
   );
 };

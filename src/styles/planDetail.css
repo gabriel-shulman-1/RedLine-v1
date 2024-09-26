@@ -98,8 +98,22 @@ span {
 }
 
 @media screen and (max-width: 900px) {
+  #planDetail{
+    flex-direction: column;
+  }
   .descriptionContainer{
     flex-direction: column;
+  }
+  .buttonMovile{
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .buttonMovile .slider{
+    width: 130px;
+    margin: 2rem 0 2rem 0;
   }
   .txDescription{
     width: auto;
@@ -112,14 +126,10 @@ span {
   .descriptionContainer img{
     display: none;
   }
-  .slider{
-    height: 250px;
+  .slider.izq:hover {
     animation: onButtonCF 2s infinite alternate;
   }
-  .slider.izq {
-    animation: onButtonCF 2s infinite alternate;
-  }
-  .slider.der {
+  .slider.der:hover {
     animation: onButtonCF 2s infinite alternate;
   }
 
